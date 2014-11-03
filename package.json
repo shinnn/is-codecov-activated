@@ -1,0 +1,48 @@
+{
+  "name": "require-bower-files",
+  "version": "0.0.0",
+  "description": "`Require` bower components all at once",
+  "repository": "shinnn/require-bower-files",
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn"
+  },
+  "scripts": {
+    "pretest": "eslint *.js & jscs *.js",
+    "test": "bower install && node test.js | tap-spec",
+    "coverage": "istanbul cover -x=bower_components/** test.js",
+    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/require-bower-files/blob/master/LICENSE"
+    }
+  ],
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "module",
+    "bower",
+    "require",
+    "load",
+    "dep",
+    "deps",
+    "dependency",
+    "manage",
+    "management"
+  ],
+  "dependencies": {
+    "bower-files": "^2.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.8.2",
+    "istanbul": "^0.3.2",
+    "istanbul-coveralls": "^1.0.1",
+    "jscs": "^1.7.3",
+    "tap-spec": "^1.0.1",
+    "tape": "^3.0.1"
+  }
+}
