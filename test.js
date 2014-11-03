@@ -8,8 +8,8 @@ global.window = {};
 test('requireBowerFiles()', function(t) {
   t.plan(4);
 
-  t.deepEqual(
-    requireBowerFiles({self: true}), [requireBowerFiles],
+  t.strictEqual(
+    requireBowerFiles({self: true}).length, 1,
     'should load bower modules specified in bower.json.'
   );
 
