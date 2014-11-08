@@ -45,5 +45,8 @@
     "jscs": "^1.7.3",
     "tap-spec": "^1.0.1",
     "tape": "^3.0.1"
+  },
+  "jscsConfig": {
+    "preset": "google"
   }
 }
