@@ -1,6 +1,6 @@
 {
   "name": "require-bower-files",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "`Require` bower components all at once",
   "repository": "shinnn/require-bower-files",
   "author": {
