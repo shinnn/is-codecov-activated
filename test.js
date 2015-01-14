@@ -6,12 +6,19 @@ var test = require('tape');
 global.window = {};
 
 test('requireBowerFiles()', function(t) {
-  t.plan(4);
+  t.plan(6);
+
+  t.strictEqual(requireBowerFiles.name, 'requireBowerFiles', 'should have a function name.');
+
+  var option = {self: true};
 
   t.strictEqual(
-    requireBowerFiles({self: true}).length, 1,
+    requireBowerFiles(option).length,
+    1,
     'should load bower modules specified in bower.json.'
   );
+
+  t.deepEqual(option, {self: true}, 'should not modify option object.');
 
   t.ok(
     requireBowerFiles({dev: true})[2].isNaN(NaN),
@@ -19,14 +26,14 @@ test('requireBowerFiles()', function(t) {
   );
 
   t.deepEqual(
-    requireBowerFiles(), [],
+    requireBowerFiles(),
+    [],
     'should return an empty array when it doesn\'t load any modules.'
   );
 
   t.throws(
-    function() {
-      requireBowerFiles({json: 'foo'});
-    }, /Cannot find module/,
+    requireBowerFiles.bind(null, {json: 'foo'}),
+    /ENOENT.*foo/,
     'should throw an error when it fails to load files.'
   );
 });
