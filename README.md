@@ -1,10 +1,11 @@
 # require-bower-files
 
-[![Build Status](https://travis-ci.org/shinnn/require-bower-files.svg?branch=master)](https://travis-ci.org/shinnn/require-bower-files)
+[![NPM version](https://img.shields.io/npm/v/require-bower-files.svg?style=flat)](https://www.npmjs.com/package/require-bower-files)
+[![Build Status](https://img.shields.io/travis/shinnn/require-bower-files.svg?style=flat)](https://travis-ci.org/shinnn/require-bower-files)
 [![Build status](https://ci.appveyor.com/api/projects/status/p4agdotoyrks5qov?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/require-bower-files)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/require-bower-files.svg)](https://coveralls.io/r/shinnn/require-bower-files)
-[![Dependency Status](https://david-dm.org/shinnn/require-bower-files.svg)](https://david-dm.org/shinnn/require-bower-files)
-[![devDependency Status](https://david-dm.org/shinnn/require-bower-files/dev-status.svg)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/require-bower-files.svg?style=flat)](https://coveralls.io/r/shinnn/require-bower-files)
+[![Dependency Status](https://img.shields.io/david/shinnn/require-bower-files.svg?style=flat&label=deps)](https://david-dm.org/shinnn/require-bower-files)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/require-bower-files.svg?style=flat&label=devDeps)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
 
 A [Node](http://nodejs.org/) module to `require` [bower](http://bower.io/) components all at once
 
@@ -26,8 +27,6 @@ requireBowerFiles();
 
 ## Installation
 
-[![NPM version](https://badge.fury.io/js/require-bower-files.svg)](https://www.npmjs.org/package/require-bower-files)
-
 [Use npm](https://www.npmjs.org/doc/cli/npm-install.html).
 
 ```sh
@@ -42,13 +41,15 @@ var requireBowerFiles = require('require-bower-files');
 
 ### requireBowerFiles([*options*])
 
-*options*: `Object` (Directly passed to [bower-files](https://github.com/ksmithut/bower-files) option)  
+*options*: `Object` (Directly passed to [bower-files constructor](https://github.com/ksmithut/bower-files#options) and [filter function](https://github.com/ksmithut/bower-files#libfilter-options-))  
 Return: `Array`
 
-It gets JavaScript file paths of bower components using [bower-files](https://github.com/ksmithut/bower-files#options), [`require`](http://nodejs.org/api/globals.html#globals_require)s them and returns an array of the loaded modules.
+It gets bower components paths with [bower-files](https://github.com/ksmithut/bower-files#options), [`require`](http://nodejs.org/api/globals.html#globals_require)s them and returns an array of the loaded modules.
+
+`ext` option is `js` by default to filter out non-JS files.
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
