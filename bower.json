@@ -14,8 +14,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "code-points": "~1.1.0",
-    "lodash": "~2.4.1"
+    "code-points": "~1.1.2",
+    "lodash": "~3.6.0"
   },
   "ignore": [
     "**/.*",
