@@ -9,8 +9,8 @@
   },
   "scripts": {
     "bower": "bower install",
-    "pretest": "eslint *.js && jscs *.js && ${npm_package_scripts_bower}",
-    "test": "bower install && node test.js | tap-spec",
+    "pretest": "eslint --config node_modules/@shinnn/eslintrc-node/rc.json index.js test.js && ${npm_package_scripts_bower}",
+    "test": "node test.js | tap-spec",
     "coverage": "istanbul cover -x=bower_components/** test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
@@ -39,18 +39,12 @@
     "object-assign": "^2.0.0"
   },
   "devDependencies": {
+    "@shinnn/eslintrc-node": "^1.0.2",
     "bower": "^1.4.1",
     "eslint": "^0.18.0",
     "istanbul": "^0.3.13",
     "istanbul-coveralls": "^1.0.2",
-    "jscs": "^1.12.0",
     "tap-spec": "^3.0.0",
     "tape": "^4.0.0"
-  },
-  "jscsConfig": {
-    "preset": "google",
-    "maximumLineLength": 98,
-    "requireBlocksOnNewline": true,
-    "validateLineBreaks": "LF"
   }
 }
