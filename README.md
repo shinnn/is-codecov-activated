@@ -12,8 +12,8 @@ A [Node](http://nodejs.org/) module to `require` [bower](http://bower.io/) compo
 ```json
 {
   "dependencies": {
-    "jquery": "~2.1.1",
-    "lodash": "~2.4.1"
+    "jquery": "~2.1.4",
+    "lodash": "~3.8.0"
   }
 }
 ```

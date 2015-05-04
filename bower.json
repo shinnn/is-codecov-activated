@@ -15,16 +15,16 @@
   "license": "MIT",
   "devDependencies": {
     "code-points": "~1.1.2",
-    "lodash": "~3.6.0"
+    "lodash": "~3.8.0"
   },
   "ignore": [
     "**/.*",
+    "*.json",
     "*.yml",
     "bower_components",
     "coverage",
     "node_modules",
-    "test.js",
-    "package.json"
+    "test.js"
   ],
   "private": true
 }

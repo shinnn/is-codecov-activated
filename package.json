@@ -35,13 +35,13 @@
     "management"
   ],
   "dependencies": {
-    "bower-files": "^3.4.5",
+    "bower-files": "^3.7.0",
     "object-assign": "^2.0.0"
   },
   "devDependencies": {
     "@shinnn/eslintrc-node": "^1.0.2",
     "bower": "^1.4.1",
-    "eslint": "^0.18.0",
+    "eslint": "^0.20.0",
     "istanbul": "^0.3.13",
     "istanbul-coveralls": "^1.0.2",
     "tap-spec": "^3.0.0",
