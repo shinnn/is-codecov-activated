@@ -7,7 +7,7 @@
 [![Dependency Status](https://img.shields.io/david/shinnn/require-bower-files.svg?style=flat&label=deps)](https://david-dm.org/shinnn/require-bower-files)
 [![devDependency Status](https://img.shields.io/david/dev/shinnn/require-bower-files.svg?style=flat&label=devDeps)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
 
-A [Node](http://nodejs.org/) module to `require` [bower](http://bower.io/) components all at once
+A [Node](https://nodejs.org/) module to `require` [bower](http://bower.io/) components all at once
 
 ```json
 {
@@ -27,7 +27,7 @@ requireBowerFiles();
 
 ## Installation
 
-[Use npm](https://www.npmjs.org/doc/cli/npm-install.html).
+[Use npm](https://docs.npmjs.com/cli/install).
 
 ```sh
 npm install require-bower-files
@@ -50,6 +50,6 @@ It gets bower components paths with [bower-files](https://github.com/ksmithut/bo
 
 ## License
 
-Copyright (c) [Shinnosuke Watanabe](https://github.com/shinnn)
+Copyright (c) 2014 - 2015 [Shinnosuke Watanabe](https://github.com/shinnn)
 
 Licensed under [the MIT License](./LICENSE).
