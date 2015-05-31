@@ -1,11 +1,11 @@
 # require-bower-files
 
-[![NPM version](https://img.shields.io/npm/v/require-bower-files.svg?style=flat)](https://www.npmjs.com/package/require-bower-files)
-[![Build Status](https://img.shields.io/travis/shinnn/require-bower-files.svg?style=flat)](https://travis-ci.org/shinnn/require-bower-files)
+[![NPM version](https://img.shields.io/npm/v/require-bower-files.svg)](https://www.npmjs.com/package/require-bower-files)
+[![Build Status](https://img.shields.io/travis/shinnn/require-bower-files.svg)](https://travis-ci.org/shinnn/require-bower-files)
 [![Build status](https://ci.appveyor.com/api/projects/status/p4agdotoyrks5qov?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/require-bower-files)
-[![Coverage Status](https://img.shields.io/coveralls/shinnn/require-bower-files.svg?style=flat)](https://coveralls.io/r/shinnn/require-bower-files)
-[![Dependency Status](https://img.shields.io/david/shinnn/require-bower-files.svg?style=flat&label=deps)](https://david-dm.org/shinnn/require-bower-files)
-[![devDependency Status](https://img.shields.io/david/dev/shinnn/require-bower-files.svg?style=flat&label=devDeps)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
+[![Coverage Status](https://img.shields.io/coveralls/shinnn/require-bower-files.svg)](https://coveralls.io/r/shinnn/require-bower-files)
+[![Dependency Status](https://img.shields.io/david/shinnn/require-bower-files.svg?label=deps)](https://david-dm.org/shinnn/require-bower-files)
+[![devDependency Status](https://img.shields.io/david/dev/shinnn/require-bower-files.svg?label=devDeps)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
 
 A [Node](https://nodejs.org/) module to `require` [bower](http://bower.io/) components all at once
 
@@ -19,7 +19,7 @@ A [Node](https://nodejs.org/) module to `require` [bower](http://bower.io/) comp
 ```
 
 ```javascript
-var requireBowerFiles = require('require-bower-files');
+const requireBowerFiles = require('require-bower-files');
 
 requireBowerFiles();
 //=> [Function: jQuery, Function: Lodash]
@@ -29,14 +29,14 @@ requireBowerFiles();
 
 [Use npm](https://docs.npmjs.com/cli/install).
 
-```sh
+```
 npm install require-bower-files
 ```
 
 ## API
 
 ```javascript
-var requireBowerFiles = require('require-bower-files');
+const requireBowerFiles = require('require-bower-files');
 ```
 
 ### requireBowerFiles([*options*])
