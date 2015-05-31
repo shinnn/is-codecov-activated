@@ -3,10 +3,7 @@
   "version": "2.0.0",
   "description": "`Require` bower components all at once",
   "repository": "shinnn/require-bower-files",
-  "author": {
-    "name": "Shinnosuke Watanabe",
-    "url": "https://github.com/shinnn"
-  },
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
     "bower": "bower install",
     "pretest": "eslint --config node_modules/@shinnn/eslintrc-node/rc.json index.js test.js && ${npm_package_scripts_bower}",
@@ -14,12 +11,7 @@
     "coverage": "istanbul cover -x=bower_components/** test.js",
     "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/shinnn/require-bower-files/blob/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "files": [
     "index.js"
   ],
@@ -36,15 +28,15 @@
   ],
   "dependencies": {
     "bower-files": "^3.7.0",
-    "object-assign": "^2.0.0"
+    "object-assign": "^3.0.0"
   },
   "devDependencies": {
     "@shinnn/eslintrc-node": "^1.0.2",
     "bower": "^1.4.1",
-    "eslint": "^0.20.0",
-    "istanbul": "^0.3.13",
-    "istanbul-coveralls": "^1.0.2",
-    "tap-spec": "^3.0.0",
+    "eslint": "^0.23.0",
+    "istanbul": "^0.3.15",
+    "istanbul-coveralls": "^1.0.3",
+    "tap-spec": "^4.0.0",
     "tape": "^4.0.0"
   }
 }
