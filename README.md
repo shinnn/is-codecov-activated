@@ -1,7 +1,7 @@
 # require-bower-files
 
 [![NPM version](https://img.shields.io/npm/v/require-bower-files.svg)](https://www.npmjs.com/package/require-bower-files)
-[![Build Status](https://img.shields.io/travis/shinnn/require-bower-files.svg)](https://travis-ci.org/shinnn/require-bower-files)
+[![Build Status](https://travis-ci.org/shinnn/require-bower-files.svg?branch=master)](https://travis-ci.org/shinnn/require-bower-files)
 [![Build status](https://ci.appveyor.com/api/projects/status/p4agdotoyrks5qov?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/require-bower-files)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/require-bower-files.svg)](https://coveralls.io/r/shinnn/require-bower-files)
 [![Dependency Status](https://img.shields.io/david/shinnn/require-bower-files.svg?label=deps)](https://david-dm.org/shinnn/require-bower-files)
@@ -44,7 +44,7 @@ const requireBowerFiles = require('require-bower-files');
 *options*: `Object` (Directly passed to [bower-files constructor](https://github.com/ksmithut/bower-files#options) and [filter function](https://github.com/ksmithut/bower-files#libfilter-options-))  
 Return: `Array`
 
-It gets bower components paths with [bower-files](https://github.com/ksmithut/bower-files#options), [`require`](http://nodejs.org/api/globals.html#globals_require)s them and returns an array of the loaded modules.
+It gets bower components paths with [bower-files](https://github.com/ksmithut/bower-files#options), [`require`](https://nodejs.org/api/globals.html#globals_require)s them and returns an array of the loaded modules.
 
 `ext` option is `js` by default to filter out non-JS files.
 
