@@ -4,10 +4,9 @@
 */
 'use strict';
 
-var bowerFiles = require('bower-files');
-var objectAssign = require('object-assign');
+const bowerFiles = require('bower-files');
 
 module.exports = function requireBowerFiles(options) {
-  options = objectAssign({ext: 'js'}, options);
+  options = Object.assign({ext: 'js'}, options);
   return bowerFiles(options).filter(options).map(require);
 };

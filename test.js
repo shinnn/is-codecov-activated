@@ -1,16 +1,16 @@
-'use strict';
+'use strong';
 
-var requireBowerFiles = require('./');
-var test = require('tape');
+const requireBowerFiles = require('./');
+const test = require('tape');
 
 global.window = {};
 
-test('requireBowerFiles()', function(t) {
-  t.plan(6);
+test('requireBowerFiles()', t => {
+  t.plan(5);
 
   t.strictEqual(requireBowerFiles.name, 'requireBowerFiles', 'should have a function name.');
 
-  var option = {self: true};
+  const option = {self: true};
 
   t.strictEqual(
     requireBowerFiles(option).length,
@@ -29,11 +29,5 @@ test('requireBowerFiles()', function(t) {
     requireBowerFiles(),
     [],
     'should return an empty array when it doesn\'t load any modules.'
-  );
-
-  t.throws(
-    requireBowerFiles.bind(null, {json: 'foo'}),
-    /ENOENT.*foo/,
-    'should throw an error when it fails to load files.'
   );
 });
