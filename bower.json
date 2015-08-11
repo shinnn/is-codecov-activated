@@ -7,24 +7,12 @@
     "url": "git://github.com/shinnn/require-bower-files.git"
   },
   "authors": [
-    {
-      "name": "Shinnosuke Watanabe",
-      "url": "https://github.com/shinnn"
-    }
+    "Shinnosuke Watanabe (https://github.com/shinnn)"
   ],
   "license": "MIT",
   "devDependencies": {
     "code-points": "~1.1.2",
     "lodash": "~3.8.0"
   },
-  "ignore": [
-    "**/.*",
-    "*.json",
-    "*.yml",
-    "bower_components",
-    "coverage",
-    "node_modules",
-    "test.js"
-  ],
   "private": true
 }
