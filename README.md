@@ -4,8 +4,8 @@
 [![Build Status](https://travis-ci.org/shinnn/require-bower-files.svg?branch=master)](https://travis-ci.org/shinnn/require-bower-files)
 [![Build status](https://ci.appveyor.com/api/projects/status/p4agdotoyrks5qov?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/require-bower-files)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/require-bower-files.svg)](https://coveralls.io/r/shinnn/require-bower-files)
-[![Dependency Status](https://img.shields.io/david/shinnn/require-bower-files.svg?label=deps)](https://david-dm.org/shinnn/require-bower-files)
-[![devDependency Status](https://img.shields.io/david/dev/shinnn/require-bower-files.svg?label=devDeps)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
+[![Dependency Status](https://david-dm.org/shinnn/require-bower-files.svg)](https://david-dm.org/shinnn/require-bower-files)
+[![devDependency Status](https://david-dm.org/shinnn/require-bower-files/dev-status.svg)](https://david-dm.org/shinnn/require-bower-files#info=devDependencies)
 
 A [Node](https://nodejs.org/) module to `require` [bower](http://bower.io/) components all at once
 
